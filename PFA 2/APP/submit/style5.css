@@ -1,0 +1,42 @@
+.container3 {
+   
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    
+   
+}
+.lecture input{
+    outline: none !important;
+    border: 0;
+    padding: 10px;
+    width: 70%;
+}
+.lecture{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 1% 0 5% 0;
+}
+.cours-title{
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    background-color: #FAFAFA;
+}
+.real{
+    width: 80%;
+    margin: 10% 0 0 30%;
+
+}
+.container2{
+    background-color: #FAFAFA;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 20px;
+}

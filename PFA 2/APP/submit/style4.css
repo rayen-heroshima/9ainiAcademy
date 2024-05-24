@@ -1,0 +1,17 @@
+
+aside{
+    width: 20%;
+    height: 90vh;
+}
+body{
+    height: fit-content;
+    
+}
+.core{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    margin-top: 70.4px;
+    position: fixed;
+}

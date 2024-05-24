@@ -1,0 +1,255 @@
+html {
+    font-family: "Euclid Circular A", "Poppins";
+}
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+button :hover {
+    background-color: #5856D6;
+    opacity: 80%;
+    transform: scale(0.98);
+}
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar {
+    position: fixed;
+
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    background: #5856D6;
+    transition: width 0.4s;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.open .sidebar {
+    width: 260px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-menu {
+    display: grid;
+}
+
+.sidebar-menu>button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+}
+
+.sidebar-menu>button.has-border {
+
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 10rem;
+
+}
+
+
+.sidebar-menu>button>i {
+    width: 24px;
+    height: 24px;
+    color: aliceblue;
+}
+
+
+.sidebar-menu>button>span {
+    color: #f9f9f9;
+}
+
+nav {
+    padding-top: 10px;
+}
+.main1{
+        margin-left: 150px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        height: 900px;
+}
+.first{
+
+    width: 660px;
+}
+.card7 {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background: grey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    right: 5%;
+    border: solid 1px;
+    border-color: #5856D6;
+    position: fixed;
+}
+
+.card7 i {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    transform: scale(4.0);
+    text-align: center;
+}
+
+.card7:hover {
+    transform:  scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card7__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card7:hover .card7__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.card7__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card7__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.card7:hover i {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+.keywordin{
+    color: grey;
+    
+    width: fit-content;
+    height: 35px;
+    background-color: white;
+    border: solid 1px;
+    border-color: rgb(221, 213, 213) ;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+            -4px -4px 12px rgba(0, 0, 0, 0.08);
+
+}
+.second{
+    width: 600px;
+}
+.bttn{
+    width: 270px;
+        margin-top: 420px;
+        margin-right: 190px;
+        
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+}
+.bttnin {
+    color: white;
+    width: 75px;
+    height: 30px;
+    background-color: #5856D6;
+    border: solid 1px;
+    border-color:#5856D6;
+    border-radius: 20px;
+
+}
+.bttnin i{
+    color: #000;
+}
+
+.courses{
+    background-color: #5856D6;
+    width: 70%;
+    height: max-content;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenu{
+    background-color: #7876e3;
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.course {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+    width: 90%;
+    cursor: pointer;
+}
+
+.course:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.course h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.course p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}

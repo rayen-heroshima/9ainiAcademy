@@ -1,0 +1,250 @@
+html{
+  font-family: "Euclid Circular A", "Poppins";
+}
+body{
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.card1-image {
+    display: flex;
+    padding: 1px;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.d {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+button :hover{
+    background-color: #5856D6;
+    opacity: 80%;
+    transform: scale(0.98);
+
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar {
+    position: fixed;
+
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    background: #5856D6;
+    transition: width 0.4s;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.open .sidebar {
+    width: 260px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*.sidebar-logo {
+  height: 20px;
+}*/
+
+.sidebar-menu {
+    display: grid;
+}
+
+.sidebar-menu>button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+}
+
+.sidebar-menu>button.has-border {
+
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 10rem;
+
+}
+
+
+.sidebar-menu>button>i {
+width: 24px;
+    height: 24px;
+    color: aliceblue;
+}
+.sidebar-menu>button>span {
+    color: #f9f9f9;
+}
+nav{
+    padding-top: 10px;
+}
+.navbar{
+    margin-left: 80px;
+}
+.searchBox {
+    display: flex;
+    height: 50px;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #FFFFFF;
+    border: solid 1px;
+    border-radius: 50px;
+
+    position: relative;
+}
+
+.searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    background: #5856D6;
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    
+}
+.searchButton i {
+    transform: scale(1.5);
+}
+
+/*hover effect*/
+.searchButton button:hover {
+
+    opacity: 50%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+.searchButton button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.searchInput {
+
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+}
+
+.keywords{
+
+    margin-left: 100px;
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px;
+        border-color: #f2f2f2;
+
+}
+.keywordsbtn{
+        
+        color: white;
+        width: 130px;
+        height: 40px;
+        border-radius: 20px;
+        background: #5856D6;
+        
+        
+        
+        
+}
+.keywordsbtn:hover{
+    
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+                -4px -4px 12px rgba(0, 0, 0, 0.08);
+        
+}
+.card {
+    margin-left: 90px;
+    width: 900px;
+    background: white;
+    padding: .4em;
+    padding-top: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+    /* a7ki m3a rayen*/box-shadow: 15px 15px 30px #bebebe,
+            -15px -15px 30px #ffffff;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: pointer;
+}

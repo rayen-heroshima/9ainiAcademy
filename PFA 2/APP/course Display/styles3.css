@@ -1,0 +1,251 @@
+*{
+    scroll-behavior: smooth;
+}
+html {
+    font-family: "Euclid Circular A", "Poppins";
+}
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+button :hover {
+    background-color: #5856D6;
+    opacity: 80%;
+    transform: scale(0.98);
+}
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar {
+    position: fixed;
+
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    background: #5856D6;
+    transition: width 0.4s;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.open .sidebar {
+    width: 260px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-menu {
+    display: grid;
+}
+
+.sidebar-menu>button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+}
+
+.sidebar-menu>button.has-border {
+
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 10rem;
+
+}
+
+
+.sidebar-menu>button>i {
+    width: 24px;
+    height: 24px;
+    color: aliceblue;
+}
+
+
+.sidebar-menu>button>span {
+    color: #f9f9f9;
+}
+
+nav {
+    padding-top: 10px;
+}
+/* Additional creative design enhancements */
+body {
+    background-color: #f0f4f7; /* Light blue background */
+}
+.certif.disabled {
+    opacity: 0.5; 
+    cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+    pointer-events: none; /* Disable pointer events to prevent interactions */
+}
+
+ 
+.screen{
+    width: 70%;
+}
+.main {
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px; /* Add some spacing between each course */
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease;
+    padding: 30px;
+    gap: 10px;
+}
+
+.right:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.course-title {
+    text-decoration: none;
+    font-size: 24px;
+    color: #2980b9; /* Blue color */
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0; /* Light gray border bottom */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    color: #666;
+    padding: 20px;
+}
+
+.note input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.certification {
+    width: 102%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease;
+}
+
+.certification:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.certif {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #2980b9; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.certif:hover {
+    background-color: #2471a3; /* Darker blue on hover */
+}
+
+.left {
+    flex-basis: 20%; /* Adjust the width of the left column */
+}
+.left {
+    padding: 20px;
+    position: fixed;
+    left: 75%;
+    width: 20%;
+}
+
+.course-title {
+    text-decoration: none !important;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.course-title:hover {
+    transform: translateY(-3px);
+    background-color: #5856D6;
+   
+}
+strong{
+    width: 100%;
+    height: 100%;
+    text-decoration: none !important;
+}
+.course-title strong {
+    color: #333;
+    font-size: 18px;
+    display: block;
+    text-decoration: none !important;
+}
+strong:hover {
+    color: white;
+    
+}
+a{
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    height: 300px;
+    border: #5856D6 solid 2px;
+    border-radius: 20px;
+}
+
